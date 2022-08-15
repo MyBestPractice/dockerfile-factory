@@ -15,7 +15,7 @@
 ### 2.1 Windows
 
 ```shell
-docker run --rm -d -v "$(PWD):/srv/jasper2" -p 4000:4000 putstack/gitpages-jekyll:1.0.0 jekyll serve --host 0.0.0.0 --livereload
+docker run --rm -d -v "$(PWD):/srv/jasper2" -p 4000:4000 putstack/gitpages-jekyll:1.0.0 jekyll serve --host 0.0.0.0 --livereload --force-polling
 ```
 #### Volume Mount Tips
 
@@ -24,4 +24,4 @@ docker run --rm -d -v "$(PWD):/srv/jasper2" -p 4000:4000 putstack/gitpages-jekyl
 #### Command Options
 
 > set jekyll-host up as 0.0.0.0 for local-host   
-> and livereload help your debugging
+> and --livereload, --force-polling options help your debugging
