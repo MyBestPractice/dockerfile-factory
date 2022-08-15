@@ -1,0 +1,29 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="gitpages-jekyll/Dockerfile" type="docker-deploy" factoryName="dockerfile" editBeforeRun="true" server-name="Docker">
+    <deployment type="dockerfile">
+      <settings>
+        <option name="imageTag" value="putstack/gitpages-jekyll:1.0.0" />
+        <option name="command" value="jekyll serve --host 0.0.0.0 --livereload" />
+        <option name="containerName" value="gitpages-jekyll" />
+        <option name="portBindings">
+          <list>
+            <DockerPortBindingImpl>
+              <option name="containerPort" value="4000" />
+              <option name="hostPort" value="4000" />
+            </DockerPortBindingImpl>
+          </list>
+        </option>
+        <option name="sourceFilePath" value="gitpages-jekyll/Dockerfile" />
+        <option name="volumeBindings">
+          <list>
+            <DockerVolumeBindingImpl>
+              <option name="containerPath" value="/srv/jasper2" />
+              <option name="hostPath" value="C:\Users\putst\IdeaProjects\jasper2" />
+            </DockerVolumeBindingImpl>
+          </list>
+        </option>
+      </settings>
+    </deployment>
+    <method v="2" />
+  </configuration>
+</component>
